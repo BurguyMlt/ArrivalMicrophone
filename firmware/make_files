@@ -1,0 +1,3 @@
+#!/bin/bash
+find -name "*.cpp" -or -name "*.h" -or -name "*.c" -or -name "CMakeLists.txt" >ArrivalMicrophone.files
+

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ArrivalMicrophone"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/alemorf/a/work/ArrivalMicrophone"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/alemorf/a/work/ArrivalMicrophone"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/alemorf/a/work/ArrivalMicrophone"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ArrivalMicrophone.elf">
+				<Option output="/home/alemorf/a/work/ArrivalMicrophone/ArrivalMicrophone.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alemorf/a/work/ArrivalMicrophone"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSTM32F405xx"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Core/Inc"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Drivers/CMSIS/Include"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/FATFS/Target"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/FATFS/App"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 ArrivalMicrophone.elf"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ArrivalMicrophone.elf/fast">
+				<Option output="/home/alemorf/a/work/ArrivalMicrophone/ArrivalMicrophone.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alemorf/a/work/ArrivalMicrophone"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSTM32F405xx"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Core/Inc"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/include"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Drivers/CMSIS/Include"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/FATFS/Target"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/FATFS/App"/>
+					<Add directory="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 ArrivalMicrophone.elf/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/alemorf/a/work/ArrivalMicrophone/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Core/Src/freertos.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Core/Src/main.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Core/Src/stm32f4xx_hal_msp.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Core/Src/stm32f4xx_hal_timebase_tim.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Core/Src/stm32f4xx_it.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Core/Src/system_stm32f4xx.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/FATFS/App/fatfs.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/FATFS/App/fatfs.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/FATFS/Target/bsp_driver_sd.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/FATFS/Target/bsp_driver_sd.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/FATFS/Target/sd_diskio.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/FATFS/Target/sd_diskio.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src/diskio.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src/diskio.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src/ff.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src/ff.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src/ff_gen_drv.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FatFs/src/option/syscall.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/croutine.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/list.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/queue.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/tasks.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/Middlewares/Third_Party/FreeRTOS/Source/timers.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/i2sreader.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/i2sreader.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/keyboardtask.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/keyboardtask.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/led.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/led.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/maintask.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/maintask.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/startup_stm32f405xx.s">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/uartconsoletask.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/uartconsoletask.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/uartcyclebuffer.c">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/uartcyclebuffer.h">
+			<Option target="ArrivalMicrophone.elf"/>
+		</Unit>
+		<Unit filename="/home/alemorf/a/work/ArrivalMicrophone/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
