@@ -266,6 +266,7 @@ void writer_main(void *argument)
                 if (!writer_createFile(this))
                 {
                     ledSet(ledRed | ledGreen);
+                    osDelay(pdMS_TO_TICKS(500));
                     continue;
                 }
             }
@@ -279,7 +280,7 @@ void writer_main(void *argument)
             void* data = cycleBuffer_get(&this->cycleBuffer, &dataCount);
 
             // Запись данных в файл
-            writer_writeFile(this, data, dataCount * sizeof(data[0]));
+            writer_writeFile(this, data, dataCount);
 
             // Удаляем данные из буфера
             cycleBuffer_pop(&this->cycleBuffer, dataCount);
@@ -307,18 +308,17 @@ static void writer_i2sDataReadyMt(void* this_void, void* data, size_t dataSize)
     Writer* this = (Writer*)this_void;
 
     // Эмуляция микрофона. Мы не выключаем получение данных по i2s, что бы правильно эмулировать темп приёма.
-    // Заполняем файл раномерно возрастающими значениями, так проще увидеть пропуски.
+    // Заполняем файл равномерно возрастающими значениями, так проще увидеть пропуски.
     if (this->micEmuEnabled)
     {
-        uint16_t *i, *ie;
+        int16_t *i, *ie;
         unsigned e = this->micEmuCounter;
         for (i = (int16_t*)data, ie = i + dataSize / 2; i != ie; i++)
-            *i = (uint16_t)++e;
+            *i = (int16_t)++e;
         this->micEmuCounter = e;
     }
 
-
-    cycleBuffer_putFromInterrupt(&this->cycleBuffer, data, dataSize * sizeof(data[0]));
+    cycleBuffer_putFromInterrupt(&this->cycleBuffer, data, dataSize);
 }
 
 void writer_setEnabledMt(void* this_void, bool enabled)
