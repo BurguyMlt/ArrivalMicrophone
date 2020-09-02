@@ -41,6 +41,7 @@ static bool writer_mount(Writer* this)
         }
         this->fatfsMounted = true;
     }
+    return true;
 }
 
 // Создание нового файла
