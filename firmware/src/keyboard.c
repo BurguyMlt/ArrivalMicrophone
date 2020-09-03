@@ -35,8 +35,6 @@ void keyboard_createAndPickup(Keyboard* this)
                 if (pressTime >= keyboardOffPressN)
                 {
                     pressTime = UINT_MAX;
-                    // Тут можно разместить передачу события о нажатии кнопки.
-                    // Мы же сбросим переменную keyboard.recordEnabled, так как в общем программа получится проще.
                     this->interface.keyPress(this->interface.keyPressArg, keyOff);
                 }
             }
@@ -45,8 +43,6 @@ void keyboard_createAndPickup(Keyboard* this)
         {
             if (pressTime != 0 && pressTime != UINT_MAX)
             {
-                // Тут можно разместить передачу события о нажатии кнопки.
-                // Мы же установим переменную keyboard.recordEnabled, так как в общем программа получится проще.
                 this->interface.keyPress(this->interface.keyPressArg, keyOn);
             }
             pressTime = 0;
