@@ -15,7 +15,7 @@
 static I2S_HandleTypeDef* i2sPort = &hi2s2;
 
 // Шаблон имени файла
-static const char fileNameTemplate[] = "0:/file%u.wav";
+static const char fileNameTemplate[] = "0:/%u.WAV";
 
 // Эмуляция файловой системы
 
@@ -66,11 +66,11 @@ static bool writer_createFile(Writer* this)
 
         // Следующий номер файла
         unsigned fileNumber = atomic_load(&this->fileNumber) + 1;
-        atomic_store(&this->fileNumber, fileNumber); // Я умышленно не использовал atomic_fetch_add
+        if (fileNumber >= 1000000) fileNumber = 0; // Без использования LFN, максимальный размер имени 8 символов.
+        atomic_store(&this->fileNumber, fileNumber);
 
         // Имя файла
-        static_assert(sizeof(unsigned) == 4);
-        char fileName[sizeof(fileNameTemplate) + 9];
+        char fileName[sizeof(fileNameTemplate) - 2 + 8]; // Минус %u, плюс 00000000
         int e = snprintf(fileName, sizeof(fileName), fileNameTemplate, fileNumber);
         if (e < 0 || e >= sizeof(fileName))
             Error_Handler(); // Функция не возвращается
@@ -370,10 +370,9 @@ void writer_create(Writer* this)
     // При открытии файла создавать файл максимального размера. Это снизит задержки при записи, так как
     // не потребуется модифицировать FAT
     this->maxAllocEnabled = false;
+
     this->sdEmuEnabled = true;
     this->micEmuEnabled = true;
-    this->sdEmuEnabled = false; //! DEBUG
-    this->micEmuEnabled = false; //! DEBUG    
     atomic_store(&this->maxFileSize, 16 * 1024 * 1024);
     atomic_store(&this->sdEmuMinDelayMs, 10);
     atomic_store(&this->sdEmuMaxDelayMs, 375);

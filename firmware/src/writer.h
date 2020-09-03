@@ -42,15 +42,15 @@ typedef struct WriterInfo
 {
     bool              enabled;
     unsigned          fileNumber;
-    unsigned          lostBytes;
+    size_t            lostBytes;
     unsigned          lastFsError;
     unsigned          fsErrors;
     size_t            payloadBytesInFile;
     bool              fileOpened;
     bool              realFileOpened;
-    unsigned          sdEmuEnabled;
-    unsigned          micEmuEnabled;
-    unsigned          maxAllocEnabled;
+    bool              sdEmuEnabled;
+    bool              micEmuEnabled;
+    bool              maxAllocEnabled;
     unsigned          sdEmuMaxDelayMs;
     unsigned          sdEmuMinDelayMs;
     unsigned          maxFileSize;

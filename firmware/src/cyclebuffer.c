@@ -60,7 +60,7 @@ void cycleBuffer_putFromInterrupt(CycleBuffer* this, const void* data, size_t da
     // Записываем сколько влезет
     if (dataSize > freeSize)
     {
-        atomic_fetch_add(&this->lostBytes, dataSize);
+        atomic_fetch_add(&this->lostBytes, dataSize - freeSize);
         dataSize = freeSize;
     }
 

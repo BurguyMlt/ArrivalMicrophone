@@ -13,6 +13,9 @@ const static uint32_t wavHeaderId4 = 16;
 const static uint16_t wavHeaderId5 = 1;
 const static uint32_t wavHeaderId6 = 0x61746164;
 
+//! Тут можно в макрос завернуть
+//! const static uint32_t wavHeaderId1 = LETOH(0x46464952);
+
 #pragma pack(push, 1)
 
 typedef struct WavPcmHeader
