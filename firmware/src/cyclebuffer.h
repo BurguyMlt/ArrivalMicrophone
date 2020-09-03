@@ -8,8 +8,6 @@
 #include "FreeRTOS.h"
 #include "semphr.h"
 
-#define CYCLE_BUFFER_SIZE 65536U
-
 typedef struct CycleBuffer
 {
     xSemaphoreHandle       semaphore;
